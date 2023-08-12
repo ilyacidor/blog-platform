@@ -1,0 +1,138 @@
+.articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 26px
+}
+
+.articles__item {
+    height: 140px;
+    overflow: hidden;
+}
+
+.article {
+    background-color: white;
+    width: 938px;
+    padding: 16px;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    box-shadow: 0px 4px 12px 0px #00000026;
+}
+
+.short-info {
+    width: 608px;
+}
+
+.title-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.title {
+    color: #1890FF;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.favorite {
+    margin-top: 6px;
+    background-color: white;
+    height: 16px;
+    overflow: hidden;
+}
+
+.favorite:hover,
+.favorite:focus {
+    background-color: #d31041;
+    animation-name: like;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes like {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #d31041;
+    }
+}
+
+
+.likes {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #00000075
+}
+
+.tag {
+    border: 1px solid #00000080;
+    border-radius: 2px;
+    padding: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 8px;
+    margin-top: 4px;
+    color: #00000080;
+}
+
+.description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 12px;
+  height: 44px;
+  overflow: hidden;
+}
+
+.author {
+    position: relative;
+    padding-right: 56px;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.date {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: #00000080;
+}
+
+.avatar {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    border-radius: 50%;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    width: 410px;
+    height: 30px;
+    overflow: hidden;
+}

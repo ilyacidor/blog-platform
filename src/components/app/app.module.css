@@ -1,0 +1,121 @@
+.content {
+    background-color: #EBEEF3;
+    min-height: 100dvh;
+}
+
+.header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
+    padding: 14px 22px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.user-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.realworld-blog,
+.sign-in,
+.user {
+    color: #000000D9;
+}
+
+.sign-up {
+    color: #52C41A;
+    border: 1px solid #52C41A;
+    border-radius: 5px;
+    padding: 12px 18px;
+}
+
+.create-article {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #52C41A;
+    border: 1px solid #52C41A;
+    border-radius: 5px;
+    padding: 6px 8px;
+}
+
+.user-data {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.nav__button {
+    color: #000000BF;
+    border: 1px solid #000000BF;
+    border-radius: 5px;
+    background-color: white;
+    padding: 12px 16px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.nav__button:hover,
+.nav__button:focus {
+  animation-name: button;
+  animation-duration: .7s;
+  animation-fill-mode: forwards;
+}
+
+.main {
+    padding-top: 106px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes button {
+    from {
+        color: #000000BF;
+        background-color: white;
+    }
+    to {
+        color: white;
+        background: #000000BF;
+    }
+}
+
+.create-article:hover,
+.create-article:focus,
+.sign-up:hover,
+.sign-up:focus {
+    animation-name: link;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes link {
+    from {
+        color: #52C41A;
+        background-color: white;
+    }
+    to {
+        color: white;
+        background: #52C41A;
+    }
+}
