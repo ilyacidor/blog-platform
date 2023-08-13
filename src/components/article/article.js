@@ -50,7 +50,7 @@ const Article = () => {
     }
   }
   const buttons =
-    author.username === sessionStorage.getItem('username') ? (
+    author.username === username ? (
       <div className={styles.buttons}>
         <button type="button" className={styles.button} onClick={changePopupStyle}>
           Delete
