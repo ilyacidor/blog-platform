@@ -1,4 +1,4 @@
 # blog-platform
 
 Ссылка на приложение:
-https://blog-platform-one-cyan.vercel.app/
+https://blog-platform-khaki.vercel.app/
