@@ -1,4 +1,4 @@
 # blog-platform
 
 Ссылка на приложение:
-https://blog-platform-lake-alpha.vercel.app/
+https://blog-platform-rouge.vercel.app/
