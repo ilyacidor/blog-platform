@@ -1,34 +1,18 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { Pagination, ConfigProvider } from 'antd'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { format } from 'date-fns'
 
 import whiteHeart from '../../icons/not-favorite.svg'
 import redHeart from '../../icons/favorite.svg'
-import ArticlesListContainer from '../article-list-container'
-import { updatePage, favoriteArticle, unfavoriteArticle, fetchArticle } from '../../redux/articles-slice'
+import ArticlesListContainer from '../articles-list-container'
 
 import styles from './articles-list.module.css'
 
 const ArticlesList = () => {
   const articlesCount = useSelector((state) => state.articles.articlesCount)
-  const { currentPage, articles } = ArticlesListContainer()
-  const dispatch = useDispatch()
-  const changePage = (page) => {
-    dispatch(updatePage(page))
-  }
-  const username = sessionStorage.getItem('username')
-  const navigate = useNavigate()
-  const changeFavorite = (slug, favorite) => {
-    if (!username) navigate('/sign-in', { replace: true })
-    if (favorite) {
-      dispatch(unfavoriteArticle(slug))
-    } else {
-      dispatch(favoriteArticle(slug))
-    }
-    dispatch(fetchArticle(slug))
-  }
+  const { currentPage, articles, changePage, changeFavorite } = ArticlesListContainer()
   const elements = articles.map((el) => {
     let maxId = 1
     const id = el.id
