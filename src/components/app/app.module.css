@@ -1,0 +1,49 @@
+.content {
+    background-color: #EBEEF3;
+    min-height: 100dvh;
+}
+
+.header {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
+    padding: 14px 22px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.realworld-blog {
+    color: #000000D9;
+}
+
+.realworld-blog:hover,
+.realworld-blog:focus {
+    animation-name: link-dark;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes link-dark {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 50%;
+    }
+}
+
+.main {
+    padding-top: 106px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}

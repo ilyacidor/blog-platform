@@ -1,0 +1,239 @@
+.article {
+    position: relative;
+    background-color: white;
+    width: 938px;
+    min-height: 80vh;
+    padding: 16px;
+    height: 100%;
+    box-shadow: 0px 4px 12px 0px #00000026;
+}
+
+.short-info {
+    width: 608px;
+}
+
+.title-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.title {
+    color: #1890FF;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.likes {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #00000075
+}
+
+.favorite {
+    margin-top: 3px;
+    background-color: white;
+}
+
+.favorite:hover,
+.favorite:focus {
+    animation-name: like;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes like {
+    from {
+        background-color: white;
+    }
+    to {
+        background-color: #faacb9;
+    }
+}
+
+.tag {
+    border: 1px solid #00000080;
+    border-radius: 2px;
+    padding: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-right: 8px;
+    margin-top: 4px;
+    color: #00000080;
+}
+
+.description {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 16px;
+}
+
+.body {
+    margin-top: 20px;
+}
+
+.author {
+    position: absolute;
+    top: 16px;
+    right: 66px;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.date {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: right;
+    color: #00000080;
+}
+
+.avatar {
+    position: absolute;
+    top: 2px;
+    right: -50px;
+    border-radius: 50%;
+}
+
+.buttons {
+    position: absolute;
+    top: 80px;
+    right: 16px;
+}
+
+.button,
+.link {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+    background-color: white;
+    color: #F5222D;
+    border: 1px solid #F5222D;
+    border-radius: 5px;
+    margin-right: 12px;
+    padding: 3px 12px;
+}
+
+.button:hover,
+.button:focus {
+    animation-name: button-red;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes button-red {
+    from {
+        color: #F5222D;
+        background-color: white;
+    }
+    to {
+        color: white;
+        background: #F5222D;
+    }
+}
+
+.link {
+    border-color: #52C41A;
+    color: #52C41A;
+    padding: 6px 16px;
+}
+
+.link:hover,
+.link:focus {
+    animation-name: link;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes link {
+    from {
+        color: #52C41A;
+        background-color: white;
+    }
+    to {
+        color: white;
+        background: #52C41A;
+    }
+}
+
+.popup {
+    position:absolute;
+    top: 0px;
+    left: 78px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 232px;
+    padding: 12px 16px;
+    box-shadow: 0px 2px 8px 0px #00000026;
+    background-color: white;
+}
+
+.popup__image {
+    position: absolute;
+    top: 12px;
+    left: 15px;
+}
+
+.popup__text {
+    padding-left: 20px;
+}
+
+.popup__button {
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    background-color: white;
+    padding: 4px 8px;
+    margin-left: 8px;
+    margin-top: 12px;
+    color: #595959;
+}
+
+.popup__button:first-of-type {
+    margin-left: 112px;
+}
+
+.popup__button:hover,
+.popup__button:focus {
+    animation-name: popup-button;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popup-button {
+    from {
+        color: #595959;
+        background-color: white;
+    }
+    to {
+        color: white;
+        background: #1890FF;
+        border-color: #1890FF;
+    }
+}
+
+
+

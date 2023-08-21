@@ -1,0 +1,96 @@
+.user-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.user {
+    color: #000000D9;
+}
+
+.user:hover,
+.user:focus {
+    animation-name: link-dark;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes link-dark {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 50%;
+    }
+}
+
+.create-article {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #52C41A;
+    border: 1px solid #52C41A;
+    border-radius: 5px;
+    padding: 6px 8px;
+}
+
+.user-data {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.avatar {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+}
+
+.log-out {
+    color: #000000BF;
+    border: 1px solid #000000BF;
+    border-radius: 5px;
+    background-color: white;
+    padding: 12px 16px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.log-out:hover,
+.log-out:focus {
+  animation-name: button;
+  animation-duration: .7s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes button {
+    from {
+        color: #000000BF;
+        background-color: white;
+    }
+    to {
+        color: white;
+        background: #000000BF;
+    }
+}
+
+.create-article:hover,
+.create-article:focus {
+    animation-name: link-green;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes link-green {
+    from {
+        color: #52C41A;
+        background-color: white;
+    }
+    to {
+        color: white;
+        background: #52C41A;
+    }
+}

@@ -1,0 +1,50 @@
+.user-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.sign-in {
+    color: #000000D9;
+}
+
+.sign-in:hover,
+.sign-in:focus {
+    animation-name: link-dark;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes link-dark {
+    from {
+        opacity: 100%;
+    }
+    to {
+        opacity: 50%;
+    }
+}
+
+.sign-up {
+    color: #52C41A;
+    border: 1px solid #52C41A;
+    border-radius: 5px;
+    padding: 12px 18px;
+}
+
+.sign-up:hover,
+.sign-up:focus {
+    animation-name: link-green;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes link-green {
+    from {
+        color: #52C41A;
+        background-color: white;
+    }
+    to {
+        color: white;
+        background: #52C41A;
+    }
+}
